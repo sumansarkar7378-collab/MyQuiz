@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MyQuiz | Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <p id="welcome">Welcome To MyQuiz</p>
+    <div class="main">
+        <div class="container">
+            <h1>MyQuiz</h1>
+            <p>Choose a category:</p>
+            <div class="category-buttons">
+                <button onclick="startQuiz(21)">Sports</button>
+                <button onclick="startQuiz(20)">Mythology</button>
+                <button onclick="startQuiz(11)">Movies</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        function startQuiz(id) {
+            localStorage.setItem('selectedCategory', id);
+            window.location.href = 'quiz.html';
+        }
+    </script>
+</body>
+</html>
