@@ -24,8 +24,13 @@
     border-radius: 5px;
     width: 350px;
     text-align: center;
-    height:150px;
+    height:175px;
     box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+}
+#bod{
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .btn-grid {
